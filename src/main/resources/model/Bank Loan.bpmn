@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_00rwpxz" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="e576085" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="fc823716-113b-48eb-8a29-7d277d662f00">
+  <bpmn:process id="bank-loan" name="Bank Loan" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_ApplicationReceived" name="Application received">
+      <bpmn:extensionElements />
+      <bpmn:outgoing>Flow_0i3jw9h</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="EndEvent_ApplicationProcessed" name="Application processed">
+      <bpmn:incoming>Flow_0no1c1u</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="Activity_DoNothing" name="Do nothing">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="doNothing" />
+        <zeebe:ioMapping>
+          <zeebe:input source="=now()" target="doNothingJobStart" />
+        </zeebe:ioMapping>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0i3jw9h</bpmn:incoming>
+      <bpmn:outgoing>Flow_0no1c1u</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0i3jw9h" sourceRef="StartEvent_ApplicationReceived" targetRef="Activity_DoNothing" />
+    <bpmn:sequenceFlow id="Flow_0no1c1u" sourceRef="Activity_DoNothing" targetRef="EndEvent_ApplicationProcessed" />
+  </bpmn:process>
+  <bpmn:error id="Error_1g994ru" name="Error_FacultyUnavalible" errorCode="FACULTY_UNAVAILABLE" />
+  <bpmn:error id="Error_0hv9p1k" name="Error_1fgerid" />
+  <bpmn:error id="Error_0ehfjhb" name="Error_FacultyUnavailable" errorCode="Error_FacultyUnavailable" />
+  <bpmn:error id="Error_1l46sz8" name="Error_FacultyUnavailble" errorCode="FACULTY_UNAVAILBLE" />
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="bank-loan">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_ApplicationReceived">
+        <dc:Bounds x="172" y="259" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="164" y="302" width="57" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0wn41hj_di" bpmnElement="Activity_DoNothing">
+        <dc:Bounds x="270" y="237" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1mmnoot_di" bpmnElement="EndEvent_ApplicationProcessed">
+        <dc:Bounds x="442" y="259" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="434" y="302" width="57" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0i3jw9h_di" bpmnElement="Flow_0i3jw9h">
+        <di:waypoint x="208" y="277" />
+        <di:waypoint x="270" y="277" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0no1c1u_di" bpmnElement="Flow_0no1c1u">
+        <di:waypoint x="370" y="277" />
+        <di:waypoint x="442" y="277" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
