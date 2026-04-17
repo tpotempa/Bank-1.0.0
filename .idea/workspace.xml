@@ -70,8 +70,19 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Bank" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Bank" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
     <configuration name="BankApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Recruitment" />
+      <module name="Bank" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.edu.atar.bank.BankApplication" />
       <method v="2">
         <option name="Make" enabled="true" />

@@ -7,13 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="stacja_benzynowa" />
-        <module name="Recruitment" />
+        <module name="Bank" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Recruitment" options="-parameters" />
+      <module name="Bank" options="-parameters" />
       <module name="stacja_benzynowa" options="-parameters" />
     </option>
   </component>
