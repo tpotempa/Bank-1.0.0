@@ -1,4 +1,4 @@
-package pl.edu.atar.bank;
+package pl.edu.atar.bank.worker;
 
 import java.util.Map;
 
