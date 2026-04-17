@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9feadf23-f647-43b2-a787-771336fcae44" name="Changes" comment="" />
+    <list default="true" id="9feadf23-f647-43b2-a787-771336fcae44" name="Changes" comment="Name change.">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +15,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "tpotempa"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/tpotempa/Bank-1.0.0.git",
+    "accountId": "a2227e7d-f40f-4751-b838-aad784b736ba"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2,
   &quot;fromUser&quot;: false
@@ -55,25 +69,14 @@
       <recent name="$PROJECT_DIR$/src/main/resources/model" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BankApplication (1)">
-    <configuration name="BankApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="BankApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Recruitment" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.edu.atar.bank.BankApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Recruitment" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.edu.atar.bank.loan.BankApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Spring Boot.BankApplication" />
-      <item itemvalue="Spring Boot.BankApplication (1)" />
-    </list>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -84,11 +87,24 @@
       <updated>1776359071743</updated>
       <workItem from="1776359072781" duration="2081000" />
       <workItem from="1776361303286" duration="486000" />
-      <workItem from="1776361825477" duration="3077000" />
+      <workItem from="1776361825477" duration="5638000" />
     </task>
+    <task id="LOCAL-00001" summary="Name change.">
+      <option name="closed" value="true" />
+      <created>1776364962756</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1776364962756</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Name change." />
+    <option name="LAST_COMMIT_MESSAGE" value="Name change." />
   </component>
 </project>
